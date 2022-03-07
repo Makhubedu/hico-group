@@ -7,7 +7,7 @@ const UserDetails = ({
     lastName,
     solutation,
     gender,
-    employee,
+    employeeNumber,
     fullName,
     salary,
     profileColor,
@@ -17,7 +17,7 @@ const UserDetails = ({
     setLastName,
     setSolutation,
     setGender,
-    setEmployee,
+    setEmployeeNumber,
     setFullName,
     setSalary,
     setProfileColor,
@@ -103,7 +103,7 @@ const UserDetails = ({
                     </FormItem>
                     <FormItem>
                         <Label htmlFor="id_employee">Employee #*</Label>
-                        <Input type="number" id='id_employee' value={employee} onChange={(e) => setEmployee(e.target.value)} />
+                        <Input type="number" id='id_employee' value={employeeNumber} onChange={(e) => setEmployeeNumber(e.target.value)} />
                     </FormItem>
 
                 </FormContent>

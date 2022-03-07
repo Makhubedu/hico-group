@@ -20,7 +20,7 @@ const App = () =>{
     const[lastName, setLastName] = useState("")
     const[solutation, setSolutation] = useState("Mr")
     const[gender, setGender] = useState("Male")
-    const[employee, setEmployee] = useState(0)
+    const[employeeNumber, setEmployeeNumber] = useState(0)
     const[fullName, setFullName] = useState("")
     const[salary, setSalary] = useState(0)
     const[profileColor, setProfileColor] = useState("")
@@ -49,7 +49,7 @@ const App = () =>{
         setLastName("")
         setSolutation("Mr")
         setGender("Male")
-        setEmployee(0)
+        setEmployeeNumber(0)
         setFullName("")
         setSalary(0)
         setProfileColor("")
@@ -59,7 +59,7 @@ const App = () =>{
         emp.preventDefault()
 
         // Error handing before making a request to API
-        if(firstName === "" || lastName === "" || employee ===0 || salary === 0) {
+        if(firstName === "" || lastName === "" || employeeNumber ===0 || salary === 0) {
             alert("Make Sure you fill fields in the form.")
         }else{
             try{
@@ -70,7 +70,7 @@ const App = () =>{
                         lastName,
                         solutation,
                         gender,
-                        employee,
+                        employeeNumber,
                         fullName,
                         salary,
                         profileColor
@@ -83,7 +83,7 @@ const App = () =>{
                         lastName,
                         solutation,
                         gender,
-                        employee,
+                        employeeNumber,
                         fullName,
                         salary,
                         profileColor,
@@ -116,7 +116,7 @@ const App = () =>{
         setLastName(emp.lastName)
         setSolutation(emp.solutation)
         setGender(emp.gender)
-        setEmployee(emp.employeeNumber)
+        setEmployeeNumber(emp.employeeNumber)
         setFullName(emp.firstName + " " + emp.lastName)
         setSalary(emp.salary)
         setProfileColor(emp.profileColor)
@@ -165,7 +165,7 @@ const App = () =>{
                     lastName={lastName}
                     solutation={solutation}
                     gender={gender}
-                    employee={employee}
+                    employeeNumber={employeeNumber}
                     fullName={fullName}
                     salary={salary}
                     profileColor={profileColor}
@@ -175,7 +175,7 @@ const App = () =>{
                     setLastName={setLastName}
                     setSolutation={setSolutation}
                     setGender={setGender}
-                    setEmployee={setEmployee}
+                    setEmployeeNumber={setEmployeeNumber}
                     setFullName={setFullName}
                     setSalary={setSalary}
                     setProfileColor={setProfileColor}
